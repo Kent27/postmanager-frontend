@@ -1,6 +1,6 @@
 # Post Manager Front End
 
-Front End for Post Manager
+Front End for Post Manager (Using React-Redux)
 
 ## Requirement
 
@@ -25,4 +25,4 @@ npm install
 npm start
 ```
 
-Notes: Please run the [backend](https://github.com/Kent27/postmanager-backend) first before running this one.
+Notes: Please clone and run the [backend](https://github.com/Kent27/postmanager-backend) first before running this application.
