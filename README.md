@@ -1,6 +1,6 @@
-# Post Manager Front End
+# Post Manager Front End (Using React-Redux)
 
-Front End for Post Manager (Using React-Redux)
+Front End for Post Manager
 
 ## Requirement
 
