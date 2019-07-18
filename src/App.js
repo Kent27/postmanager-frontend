@@ -9,6 +9,10 @@ import PrivateRoute from "./components/common/PrivateRoute";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Login from "./components/auth/Login";
+import Posts from "./components/posts/Posts";
+import Post from "./components/post/Post";
+import PostUpdate from "./components/post/PostUpdate";
+import NotFound from "./components/not-found/NotFound";
 
 import "./App.css";
 
@@ -41,6 +45,20 @@ class App extends Component {
             <Route exact path="/" component={Login} />
             <div className="container">
               <Route exact path="/login" component={Login} />
+              <Switch>
+                <PrivateRoute exact path="/posts" component={Posts} />
+              </Switch>
+              <Switch>
+                <PrivateRoute exact path="/post/:id" component={Post} />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/post/update/:id"
+                  component={PostUpdate}
+                />
+              </Switch>
+              <Route exact path="/not-found" component={NotFound} />
             </div>
             <Footer />
           </div>
